@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 1em;
+    line-height: 135%;
+}
+a {
+   color: #6aadee;
+    text-decoration: none; //подчеркивание ссылок
+}
+.clear {
+    clear: both;
+}
+/*Стили для шапки*/
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    color: dimgray;
+}
+
+input{
+    margin: 10px 0;
+    padding: 10px;
+    border: unset;
+    border-bottom: 2px solid #e3e3e3;
+    color: dimgray;
+    outline: none;
+    font-family: "Roboto Light";
+    font-size: 20px;
+}
+submit{
+    background: darkred;
+    color: white;
+    font-size: 9pt;
+}
+table {
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    border-collapse: collapse;
+    border: 3px solid darkred;
+
+    text-align: center;
+}
+th{
+    background-color: #8a8a8a;
+    color: white;
+    padding: 10px 20px;
+
+}
+
+th, td{
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: darkred;
+}
+
