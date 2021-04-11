@@ -182,14 +182,14 @@ input:hover{
     position: relative;
 
 }
-#newsLent #news{/* новости*/
+#news{/* новости*/
     width: 80%;
     margin-left: 10%;
     float: left;
     font-family: sans-serif;
     font-size: 13px;
 }
-#newsLent #news #firstNews{
+#firstNews{
     width: 80%;
     margin-left: 10%;
     margin-bottom: 10px;
@@ -198,7 +198,7 @@ input:hover{
     float: left;
 }
 @media (max-width: 480px) {
-    #newsLent #news #firstNews {
+#firstNews {
         width: 98%;
         margin-left: 2%;
         margin-bottom: 5%;
@@ -209,23 +209,22 @@ input:hover{
 }
 
 
-#newsLent #news #firstNews img, #newsLent #news .oldNews img{
+#firstNews img, .oldNews img{
     width: 100%;
     float: left;
     margin-bottom: 0px;
 }
-#newsLent #news #firstNews h2, #newsLent #news .oldNews h2{
+#firstNews h2, .oldNews h2{
     font-weight: normal;
     font-size: 1.4em;
     color: #5f5f5f;
     font-family: Montserrat, sans-serif;
 }
-#newsLent #news #firstNews p, #newsLent #news .oldNews p{
+#firstNews p,#news .oldNews p{
     width: 90%;
     margin-left: 5%;
 }
-#newsLent #news #firstNews div.more, #newsLent #news .oldNews div.more{
-    /* Сбрасываем дефолтные стили */
+ #firstNews div.more,#news .oldNews div.more{
     border: none;
     outline: none;
     display: inline-block;
@@ -241,12 +240,12 @@ input:hover{
     color: #ffffff;
     background-color: #751717;
 }
-#newsLent #news #firstNews div.more:hover, #newsLent #news .oldNews div.more:hover{
+ #firstNews div.more:hover, .oldNews div.more:hover{
     background-color: #691b1b;
 }
 
 @media (max-width: 480px ) {
-    #newsLent #news #firstNews div.more, #newsLent #news .oldNews div.more{
+     #firstNews div.more, .oldNews div.more{
         /* Сбрасываем дефолтные стили */
         border: none;
         outline: none;
@@ -262,13 +261,13 @@ input:hover{
         color: #ffffff;
         background-color: #751717;
     }
-    #newsLent #news #firstNews div.more:hover, #newsLent #news .oldNews div.more:hover{
+     #firstNews div.more:hover, #news .oldNews div.more:hover{
         background-color: #691b1b;
     }
 
 }
 
-#newsLent #news .oldNews{
+ #news .oldNews{
     width: 45%;
     margin-left: 5%;
     background-color: #d6d6d6;
@@ -300,7 +299,7 @@ input:hover{
     position: relative;
 
 }
-#newsLentFull #newsFull{/* новости*/
+#newsFull{/* новости*/
     width: 80%;
     height: 100%;
     margin-left: 10%;
@@ -308,7 +307,7 @@ input:hover{
     font-family: sans-serif;
     font-size: 13px;
 }
-#newsLentFull #newsFullFull #firstNewsFull{
+#firstNewsFull{
     width: 80%;
     margin-left: 10%;
     margin-bottom: 10px;
@@ -317,7 +316,7 @@ input:hover{
     float: left;
 }
 @media (max-width: 480px) {
-    #newsLentFull #newsFull #firstNewsFull {
+#firstNewsFull {
         width: 98%;
         margin-left: 2%;
         margin-bottom: 5%;
@@ -326,18 +325,18 @@ input:hover{
         float: left;
     }
 }
-#newsLentFull #newsFull #firstNewsFull img{
+#firstNewsFull img{
     width: 100%;
     float: left;
     margin-bottom: 10px;
 }
-#newsLentFull #newsFull #firstNewsFull h2{
+#firstNewsFull h2{
     font-weight: normal;
     font-size: 1.4em;
     color: #5f5f5f;
     font-family: Montserrat, sans-serif;
 }
-#newsLentFull #newsFull #firstNewsFull p{
+#firstNewsFull p{
     width: 100%;
     margin-left: 0;
     font-size: 14px;
