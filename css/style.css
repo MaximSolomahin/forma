@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 html, body{
-    height: 110%;
+    height: 100%;
     width: 100%;
     display: block;
     margin-left: auto;
@@ -15,7 +15,7 @@ html, body{
 
 
 a {
-   color: #6aadee;
+    color: #6aadee;
     text-decoration: none; //подчеркивание ссылок
 }
 .clear {
@@ -23,7 +23,7 @@ a {
 }
 /*Стили для шапки*/
 header {
-    width: 98%;
+    width: 100%;
     float: left ;
     padding: 1%;
     background-color: #851313;
@@ -32,7 +32,7 @@ header {
 header #logo{
     width: 40%;
     float: left;
-    }
+}
 header #logo a{
     color: white;
     font-size: 2em;
@@ -131,9 +131,12 @@ th, td{
 
     width: 80%;
     margin-left: 10%;
+    margin-top: 10px;
+    margin-bottom: 5%;
     float: left;
     min-height: 100%;
     position: relative;
+
 }
 #newsLent #news{/* новости*/
     width: 70%;
@@ -151,7 +154,7 @@ th, td{
 #newsLent #news #firstNews img, #newsLent #news .oldNews img{
     width: 100%;
     float: left;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 #newsLent #news #firstNews h2, #newsLent #news .oldNews h2{
     font-weight: normal;
@@ -164,12 +167,21 @@ th, td{
     margin-left: 5%;
 }
 #newsLent #news #firstNews div.more, #newsLent #news .oldNews div.more{
-    padding: 5px;
-    background-color: darkred;
-    color: white;
-    width: 10%;
+    /* Сбрасываем дефолтные стили */
+    border: none;
+    outline: none;
+    display: inline-block;
     text-align: center;
-    margin-top: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    /* Можно также использовать любые встроенные и кастомные шрифты, например, отсюда  */
+    font-family: Roboto, Verdana, Tahoma, sans;
+    /* Тут можно поэкспериментировать */
+    padding: 12px 16px;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #751717;
 }
 #newsLent #news #firstNews div.more:hover, #newsLent #news .oldNews div.more:hover{
     background-color: #691b1b;
@@ -191,20 +203,16 @@ th, td{
 /*footer*/
 
 footer{
-    height: 70px;
+    height: 50px;
     position: fixed;
     bottom: 0;
-    width: 98%;
+    width: 100%;
     float: left;
     padding: 1%;
     background-color: #851313;
     border-top: 2px solid darkred;
     margin-top: 10px;
     color: white;
-
-
-
-
 }
 footer img {
     width: 30px;
@@ -212,4 +220,6 @@ footer img {
     float: right;
     flex: 0 0 auto;
 }
+
+
 
