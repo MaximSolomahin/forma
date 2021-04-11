@@ -26,7 +26,7 @@
                 echo '<br>' . '<img src="../image/'. $news[$i]['id'] .'.jpg" alt="Статья 1" title=". ' . $news[$i]['id'] .'">
                     <h2>'. $news[$i]['title'] . '</h2>
                     <p> ' . $news[$i]['intro_text'] . '</p>
-                    <a href="***********">
+                    <a href="/news_read.php?id='.  $news[$i]['id'] .'">
                         <div class="more">Читать</div>
                     </a> </div>';
         if ($i == 0){
