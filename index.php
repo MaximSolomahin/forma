@@ -15,13 +15,16 @@
         <div id="main">
              <div id="form" >
                  <form action="" method="POST">
-                    <input type="text" name="name"  placeholder="Введите ваше имя" required pattern="[a-zA-Zа-яА-ЯёЁ\s]+">
+                    <input type="text" name="name"  placeholder="Введите ваше имя*" required pattern="[a-zA-Zа-яА-ЯёЁ\s]+">
                     <input type="text" name="address" placeholder="Введите ваш адрес" required>
-                    <input type="text" name="number" placeholder="Введите ваш номер телефона" required pattern="\+?[0-9]{11,12}" ">
-                    <input type="email" name="email" placeholder="Введите ваш e-mail" pattern="^[0-9a-zA-Z-.]+@[a-zA-Z]+\.[a-zA-Z]{2,3}$" >
+                    <input type="text" name="number" placeholder="Введите ваш номер телефона*" required pattern="\+?[0-9]{11,12}" ">
+                    <input type="email" name="email" placeholder="Введите ваш e-mail*" pattern="^[0-9a-zA-Z-.]+@[a-zA-Z]+\.[a-zA-Z]{2,3}$" >
+
 
                     <input id="button" type="submit" name="submit">
+
                 </form>
+
     </div>
     <?php
 } else {
