@@ -5,14 +5,13 @@
 
             $title = 'Новости';
             include_once '../blocks/head.php';
+            require_once "../functions/functions.php";
             ?>
         </head>
         <body>
         <?php
             include_once "../blocks/header.php";
             $news = getNews(3);
-            echo $news[0]['id'];
-
         ?>
         <?php
         echo '<div id="newsLent">
@@ -28,7 +27,7 @@
                     <h2>'. $news[$i]['title'] . '</h2>
                     <p> ' . $news[$i]['intro_text'] . '</p>
                     <a href="***********">
-                        <div class="more">Дальше</div>
+                        <div class="more">Читать</div>
                     </a> </div>';
         if ($i == 0){
             echo '<div class="clear"></br></div>';
@@ -52,30 +51,3 @@
         </body>
 
 </html>
-<!-- <div id="newsLent">
-     <div id="news">
-         <div id="firstNews">
-             <img src="../image/1.jpg" alt="Статья 1" title="Статья 1">
-             <h2>Статья 1</h2>
-             <p>выджмььььььалвмьлдваьмдылавьмдлываьмльыамьыам</p>
-             <a href="***********">
-                 <div class="more">Дальше</div>
-             </a>
-
-         </div>
-         <div class="clear"></br></div>
-             <div class="oldNews">
-                 <img src="../image/2.jpg" alt="Статья 2" title="Статья 2">
-                 <h2>Статья 1</h2>
-                 <p>выджмььььььалвмьлдваьмдылавьмдлываьмльыамьыам</p>
-                 <a href="***********">
-                     <div class="more">Дальше</div>
-                 </a>
-             </div>
-             <div class="oldNews">
-                 <img src="../image/3.jpg" alt="Статья 3" title="Статья 3">
-                 <h2>Статья 1</h2>
-                 <p>выджмььььььалвмьлдваьмдылавьмдлываьмльыамьыам</p>
-                 <a href="***********">
-                     <div class="more">Дальше</div>
-                 </a>-->
