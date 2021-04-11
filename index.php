@@ -1,29 +1,25 @@
-<!-- Форма обратной связи -->
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, inital-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <?php
+    $title = 'Обратная форма';
+    include_once 'blocks/head.php';
 
-    <title>Форма обратной связи</title>
+    ?>
+
 </head>
-<body>
-    <header>
-        <div>
-
-        </div>
-    </header>
+<?php
+    include_once 'blocks/header.php';
+?>
 <?php if (!isset($_REQUEST['submit'])){?>
-    <div class="form" >
-        <form action="" method="POST">
-            <input type="text" name="name"  placeholder="Введите ваше имя" required>
-            <input type="text" name="address" placeholder="Введите ваш адрес" required>
-            <input type="text" name="number" placeholder="Введите ваш номер телефона" required>
-            <input type="email" name="email" placeholder="Введите ваш e-mail">
+        <div id="form" >
+            <form action="" method="POST">
+                <input type="text" name="name"  placeholder="Введите ваше имя" required pattern="[a-zA-Zа-яА-ЯёЁ]+">
+                <input type="text" name="address" placeholder="Введите ваш адрес" required>
+                <input type="text" name="number" placeholder="Введите ваш номер телефона" required pattern="\+?[0-9]{11,12}" ">
+                <input type="email" name="email" placeholder="Введите ваш e-mail" pattern="^[0-9a-zA-Z-.]+@[a-zA-Z]+\.[a-zA-Z]{2,3}$" >
 
-            <input style="background-color: darkred; color: white"   type="submit" name="submit">
+                <input id="button" type="submit" name="submit">
 
         </form>
     </div>
@@ -77,11 +73,9 @@
 function creatingData($val){
     return trim(strip_tags($val));
 }
+
+include_once 'blocks/footer.php';
 ?>
-
-<footer>
-
-</footer>
 
 </body>
 
