@@ -1,5 +1,5 @@
 <?php
-    require_once "../functions/functions.php";
+
 ?>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, inital-scale=1.0">
