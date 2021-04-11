@@ -16,23 +16,16 @@ $news = getOneNews($_GET['id']);
 $id = $_GET['id'];
 echo    '<br>';
 
-//var_dump($news[0]["full_text"]);
+
 
 ?>
-    <?php
-    echo '<div id="newsLentFull">
-                <div id="newsFull">';
-             echo '<div id="firstNewsFull">';
 
-    echo '<br>' . '<img src="../image/'. $news[0]['id'] .'.jpg" alt="Статья 1" title=". ' . $news[0]['id'] .'">
-
-                                <h2>'. $news[0]['title'] . '</h2>
-                                <p> ' . $news[0]['full_text'] . '</p>
-                            </a>'
-
-
-
-    ?>
+   <div id="newsLentFull">
+       <div id="newsFull">
+            <div id="firstNewsFull">
+                 <br><img src="../image/<?=$news[0]['id']?>.jpg" alt="Статья 1" title="<?=$news[0]['id']?>'">
+                                <h2><?=$news[0]['title']?></h2>
+                                <p> <?=$news[0]['full_text']?></p>
         </div>
     </div>
 </div>
