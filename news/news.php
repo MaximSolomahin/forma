@@ -16,7 +16,8 @@
         <?php
         echo '<div id="newsLent">
                 <div id="news">';
-            for ($i = 0; $i < count($news); $i++){
+                $count = count($news);
+            for ($i = 0; $i < $count; $i++){
                 if ($i == 0){
                    echo '<div id="firstNews">';
                 }
