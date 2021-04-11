@@ -22,6 +22,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto Light", sans-serif;
 }
 html, body{
     height: 100%;
@@ -46,6 +47,7 @@ header {
     padding: 1%;
     background-color: #851313;
     border-bottom: 2px solid darkred;
+    font-family: "Roboto Light", sans-serif;
 }
 header #logo{
     width: 40%;
@@ -76,48 +78,13 @@ header #news a:hover {
     font-size: 1.5em;
     font-family: "Roboto Light", sans-serif;
 }
-/*Стили таблицы*/
-table {
-    width: 100%;
-    float: left ;
-    padding: 1%;
-    background-color: #851313;
-    border-bottom: 2px solid darkred;
-}
-header #logo{
-    width: 40%;
-    float: left;
-}
-header #logo a{
-    color: white;
-    font-size: 1.5em;
-    font-family: "Roboto Light", sans-serif;
-}
-header #logo a:hover{
-    color: #b5b5b5;
-    font-size: 1.5em;
-    font-family: "Roboto Light", sans-serif;
-}
-header #news {
-    width: 40%;
-    float: right;
-    text-align: right;
-}
-header #news a {
-    color: white;
-    font-size: 1.5em;
-    font-family: "Roboto Light", sans-serif;
-}
-header #news a:hover {
-    color: #b5b5b5;
-    font-size: 1.5em;
-    font-family: "Roboto Light", sans-serif;
-}
+
+
 /*Стили таблицы*/
 table {
     border-collapse: collapse;
     border-spacing: 0;
-    width: 100%;
+    width: 80%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -128,6 +95,10 @@ table {
     font-family: Montserrat, sans-serif;
     font-size: 20px;
     border: 3px solid darkred;
+    float: left ;
+    padding: 1%;
+    background-color: #851313;
+    border-bottom: 2px solid darkred;
 
     text-align: center;
 }
@@ -387,6 +358,7 @@ footer{
     border-top: 2px solid darkred;
     margin-top: 10px;
     color: white;
+    font-family: "Roboto Light", sans-serif;
 }
 footer img {
     width: 30px;
