@@ -5,10 +5,13 @@ function getNews($num)
     ini_set('display_errors', 1);
 
     $link = getConnect();
-    mysqli_query($link, "SET NAMES 'UTF-8'");
+
+    mysqli_query($link, "SET NAMES 'utf8' COLLATE 'utf8_general_ci'");
+    mysqli_query($link, "SET CHARACTER SET 'utf8'");
 
     $table = 'news';
-    $query = "SELECT * FROM $table WHERE id > 0 LIMIT $num";
+    $query = "SELECT * FROM $table ORDER BY id DESC LIMIT $num";
+
 
     $result = mysqli_query($link, $query);
 
@@ -19,7 +22,10 @@ function getNews($num)
 
 function getOneNews($id){
     $link = getConnect();
-    mysqli_query($link, "SET NAMES 'UTF-8'");
+
+    mysqli_query($link, "SET NAMES 'utf8' COLLATE 'utf8_general_ci'");
+    mysqli_query($link, "SET CHARACTER SET 'utf8'");
+
     $table = 'news';
     $query = "SELECT * FROM $table WHERE id = $id";
 
@@ -34,16 +40,11 @@ function getOneNews($id){
 
 function getConnect(){
     $host = 'localhost';
-    $login = 'root';
-    $password = 'root';
-    $db_name = 'news_db';
+    $login = 'u1351960_default';
+    $password = 'mv!vTQv7';
+    $db_name = 'u1351960_default';
 
     $link = mysqli_connect($host, $login, $password, $db_name);
 
     return $link;
 }
-
-
-
-
-
