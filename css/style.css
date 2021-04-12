@@ -2,7 +2,7 @@
     body { font-size: 10pt }
 }
 @media screen {
-    body { font-size: 13px }
+    body { font-size: 15px }
 }
 @media screen, print {
     body { line-height: 1.2 }
@@ -11,6 +11,9 @@
 and (min-device-width: 320px)
 and (max-device-width: 480px)
 and (-webkit-min-device-pixel-ratio: 2) {
+    *{
+        font-size: 8px;
+    }
     body {
         line-height: 1.4;
         font-size:  8px;
@@ -25,7 +28,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     font-family: "Roboto Light", sans-serif;
 }
 html, body{
-    height: 100%;
+    /*height: 100%;*/
     width: 100%;
     display: block;
     margin-left: auto;
@@ -43,6 +46,7 @@ a {
 /*Стили для шапки*/
 header {
     width: 100%;
+    height: 10%;
     float: left ;
     padding: 1%;
     background-color: #851313;
@@ -187,18 +191,19 @@ input:hover{
     margin-left: 10%;
     float: left;
     font-family: sans-serif;
-    font-size: 13px;
+
 }
 #firstNews{
     width: 80%;
     margin-left: 10%;
-    margin-bottom: 10px;
+    margin-top: 2%;
+    margin-bottom: 2%;
     background-color: #d6d6d6;
     padding: 1%;
     float: left;
 }
 @media (max-width: 480px) {
-#firstNews {
+    #firstNews {
         width: 98%;
         margin-left: 2%;
         margin-bottom: 5%;
@@ -222,9 +227,11 @@ input:hover{
 }
 #firstNews p,#news .oldNews p{
     width: 90%;
-    margin-left: 5%;
+    margin-left: 1.5%;
+    margin-top: 2%;
+    color: black;
 }
- #firstNews div.more,#news .oldNews div.more{
+#firstNews div.more,#news .oldNews div.more{
     border: none;
     outline: none;
     display: inline-block;
@@ -240,12 +247,12 @@ input:hover{
     color: #ffffff;
     background-color: #751717;
 }
- #firstNews div.more:hover, .oldNews div.more:hover{
+#firstNews div.more:hover, .oldNews div.more:hover{
     background-color: #691b1b;
 }
 
 @media (max-width: 480px ) {
-     #firstNews div.more, .oldNews div.more{
+    #firstNews div.more, .oldNews div.more{
         /* Сбрасываем дефолтные стили */
         border: none;
         outline: none;
@@ -253,7 +260,7 @@ input:hover{
         text-align: center;
         text-decoration: none;
         cursor: pointer;
-        font-size: 50%;
+
 
         font-family: Roboto, Verdana, Tahoma, sans;
 
@@ -261,15 +268,15 @@ input:hover{
         color: #ffffff;
         background-color: #751717;
     }
-     #firstNews div.more:hover, #news .oldNews div.more:hover{
+    #firstNews div.more:hover, #news .oldNews div.more:hover{
         background-color: #691b1b;
     }
 
 }
 
- #news .oldNews{
+#news .oldNews{
     width: 45%;
-    margin-left: 5%;
+    margin-left: 2.5%;
     background-color: #d6d6d6;
     padding: 1%;
     float: left;
@@ -316,7 +323,7 @@ input:hover{
     float: left;
 }
 @media (max-width: 480px) {
-#firstNewsFull {
+    #firstNewsFull {
         width: 98%;
         margin-left: 2%;
         margin-bottom: 5%;
@@ -347,7 +354,7 @@ input:hover{
 /*footer*/
 
 footer{
-    height: 50px;
+    height: 5%;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -360,8 +367,7 @@ footer{
     font-family: "Roboto Light", sans-serif;
 }
 footer img {
-    width: 30px;
-    height: 30px;
+    width: 2em;
     float: right;
     flex: 0 0 auto;
 }
