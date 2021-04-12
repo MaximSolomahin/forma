@@ -31,7 +31,7 @@ function getOneNews($id){
 
     $result = mysqli_query($link, $query);
 
-    for ($date = []; $row = mysqli_fetch_assoc($result); $date[] = $row) ;
+    $date = mysqli_fetch_assoc($result) ;
     mysqli_close($link);
     return $date;
 
@@ -39,12 +39,16 @@ function getOneNews($id){
 }
 
 function getConnect(){
-    $host = 'localhost';
-    $login = 'u1351960_default';
-    $password = 'mv!vTQv7';
-    $db_name = 'u1351960_default';
+    $host = 'form';
+    $login = 'root';
+    $password = 'root';
+    $db_name = 'news_db';
 
     $link = mysqli_connect($host, $login, $password, $db_name);
 
     return $link;
+    /*    $host = 'localhost';
+    $login = 'u1351960_default';
+    $password = 'mv!vTQv7';
+    $db_name = 'u1351960_default';*/
 }
